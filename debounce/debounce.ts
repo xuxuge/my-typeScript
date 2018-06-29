@@ -3,7 +3,7 @@
  * @param action 
  * @param wait 
  */
-function debounce (action :Function, wait: number) {
+function debounce (action: Function, wait: number) {
   let timer
   return function () {
     clearTimeout(timer)
