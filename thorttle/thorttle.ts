@@ -4,7 +4,6 @@
  * @param delay  要执行的时间间隔
  */
 
-function thorttle (action: Function, delay: number) {
 function thorttle (action: Function, delay: number): Function{
   let last: number = 0
   return function () {
