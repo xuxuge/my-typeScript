@@ -8,11 +8,11 @@ function debounce(action, wait) {
     return function () {
         clearTimeout(timer);
         timer = setTimeout(function () {
-            action();
+            action.apply(this, arguments)
         }, wait);
     };
 }
-function log() {
-    console.log(1);
+function log(n) {
+    console.log(n);
 }
-window.onresize = debounce(log, 1000);
+window.onresize = debounce(log(1), 1000);

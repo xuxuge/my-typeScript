@@ -5,6 +5,7 @@
  */
 
 function thorttle (action: Function, delay: number) {
+function thorttle (action: Function, delay: number): Function{
   let last: number = 0
   return function () {
     let curr: number = +new Date()
