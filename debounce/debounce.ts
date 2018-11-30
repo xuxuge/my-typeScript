@@ -1,5 +1,5 @@
 /**
- * 简单是函数防抖方法
+ * 简单的函数防抖方法
  * @param action 
  * @param wait 
  */
